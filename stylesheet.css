@@ -1,0 +1,90 @@
+
+    body{
+        background-color: white; 
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+    }  
+    
+    .sidebar {
+      width: 250px;
+      height: 100vh;
+      background-color: #343a40;
+      color: white;
+      padding-top: 1rem;
+      flex-shrink: 0;
+    }
+
+    .sidebar h4 {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    .sidebar a {
+      color: #adb5bd;
+      text-decoration: none;
+      display: block;
+      padding: 10px 20px;
+      transition: background 0.2s;
+    }
+
+    .sidebar a:hover,
+    .sidebar a.active {
+      background-color: #495057;
+      color: #fff;
+    } 
+    .content{
+        flex-grow: 1;
+        padding: 2rem;
+    } 
+    .slideshow{
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    } 
+    /*så billederne er skjult og ikke tager dukker op når de ikke skal*/
+
+    .myslides{
+        display: none;
+    } 
+    /*tilbage og fremad knapperne i slideshow */
+    .prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+/* for at sikre mig at næste knappen er til højre */ 
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+} 
+/* layout for slide nummer teksten */
+.slidenummer{
+    color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+} 
+/* layout for prikkerne i slideshow */
+.dot{
+    .dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+}
+    
