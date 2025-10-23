@@ -83,7 +83,9 @@ function showSlides(n) {
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideIndex-1].style.display = "block";
+  slides[slideIndex-1].style.display = "block"; 
+  //minus 1 here because slideindex is 1 but slides is an array so the first element in the array would be 0 
+  //if this was not there the wrong picture would be shown on the slide.
   dots[slideIndex-1].className += " active";
 }  
 function changebackground(){ 
